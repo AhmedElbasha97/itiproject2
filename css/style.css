@@ -1,0 +1,351 @@
+@charset "utf-8";
+/* CSS Document */
+/*------------------general-------------------*/
+*,body,html{
+	padding: 0;
+	margin: 0;
+	font-family: 'Cairo', sans-serif;
+	font-weight: 200;
+	
+}
+a{
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+}
+a:hover,
+.active{
+	color: #68b6fd;
+	
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 600;
+	
+}
+.container{
+	
+	width: 80%;
+	margin: auto;
+	display: flex;
+    
+    justify-content: center;
+    align-content: center;
+}
+#panal .container,#about-me .container{
+	flex-direction: column;
+}
+#latest-projects .container ,#client-feedback .container,#plans .container,#last-blogs .container,#nav .container{
+	flex-direction: row;
+	text-align: center;
+	flex-flow: wrap;
+	justify-content: space-between;
+	padding: 50px 0px;
+}
+
+#offer .container .heading,
+#client-feedback .container .heading ,
+#plans  .heading,#last-blogs .heading {
+	width: 100%;
+	    margin-bottom: 51px;
+	text-align: center;
+}
+.btn{
+    background: linear-gradient(to right,#8491ff,#63bcfc);
+    border-radius: 4px;
+    width: fit-content;
+    padding: 5px 15px;
+    margin: 18px 0px;
+    color: white;
+}
+/*-----------------nav--------------------*/
+#nav .container{
+	padding: 15px 0px;
+}
+#nav .container i{
+	font-weight: 200;
+}
+
+/*panal*/
+#panal{
+	
+		background-color: #f8f8f84f;
+}
+
+#panal .container{
+	
+	background: url("../img/hero-img.png") no-repeat;
+	height: 600px;
+	background-position: right;
+
+}
+#panal .container .content h1{
+	font-size: 50px;
+}
+
+#panal .container .content {
+	width: 50%;
+	
+	
+	
+}
+#panal .container .content p{
+	margin-bottom: 10px;
+}
+
+
+
+/*---------------------abdout-me-----------------------*/
+
+#about-me .container{
+	
+	background: url("../img/about-img.png") no-repeat;
+	height: 450px;
+	background-position: left;
+    background-size: 450px;
+
+
+	position: relative;
+}
+#about-me .container .content h1{
+	font-weight: 700;
+    line-height: 64px;
+}
+#about-me .container .content {
+	width: 40%;
+	position: absolute;
+	right:0px;
+	
+}
+#about-me .container .content p{
+	margin-bottom: 10px;
+}
+
+
+/*-------------------------offer-----------------------*/
+#offer .container{
+flex-direction: row;
+	text-align: center;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+#offer .item i{
+	
+	font-size: 50px;
+    width: 64px;
+    height: 64px;
+}
+#offer .item{
+	margin-bottom: 40px;
+	
+	width: 30%;
+}
+/*------------------------status--------------------------*/
+#status ,#parteners{
+    background: linear-gradient(to right,#8491ff,#63bcfc);
+	display: flex;
+	color: white;
+	text-align: center;
+}
+#status .container,#parteners .container {
+	height: 200px;
+	align-items: center;
+	justify-content: space-between;
+}
+#status .unit {
+	width: 20%;
+}
+/*----------------lastprojects----------------*/
+
+
+#latest-projects .container .heading{
+	width: 100%;
+	    margin-bottom: 51px;
+}
+#latest-projects .hedding-uL{
+	width: 100%; 
+	margin-bottom: 60px;}
+#latest-projects .container ul{
+	margin: auto;
+	display: flex;
+		justify-content: space-between;
+    width: 39%;
+}
+#latest-projects .container ul>li{
+	display: inline;
+	width: 50px;
+	
+}
+#latest-projects .container ul>li:hover,
+#latest-projects .container ul>li.active{
+	color: #68b6fd;}
+
+#latest-projects .container .item{
+	margin-bottom: 30px;
+}
+/*--------------client-feedback-----------------*/
+#client-feedback{
+			background-color: #f9f9ff;
+
+}
+#client-feedback .container{
+	    padding: 90px 0px;
+	position: relative;
+}
+#client-feedback .container .arrow-key{
+	text-align: center;
+    background-color: white;
+    right: -45px;
+    padding: 16px 5px;
+    position: absolute;
+	box-shadow: -4px 4px 8px 1px rgba(0,0,0,0.3);
+
+}
+#client-feedback .container .arrow-key i{
+width: 100%;
+    font-size: 23px;
+}
+#client-feedback .container .arrow-key i:first-of-type{
+    padding-bottom: 2px;
+	border-bottom: solid thin #d1d1d7;}
+#client-feedback .feed-post{
+      flex-direction: column;
+    display: flex;
+    /* flex-flow: wrap; */
+    width: 49%;
+    background-color: white;
+    padding: 21px 60px;
+    position: relative;
+    text-align: left;
+    box-sizing: border-box;}
+#client-feedback .feed-post img{
+	    width: 28px;
+    position: absolute;
+    left: 17px;
+    top: 36px;
+}
+/*----------------------Plans----------------*/
+#plans{
+	    padding: 6% 0;
+	
+}
+#plans  .container {
+	background-color: #f9f9ff;
+	justify-content: space-between;
+	padding: 3% 2%;
+}
+#plans  .container .big-circle{
+ 	width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #e2e5ff;
+    display: flex;
+}
+#plans  .container div>div{
+	font-size: 31px;
+	margin: auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #edefff;
+    align-self: center;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#plans  .container .plan-items{
+	width: 22%;
+}
+#plans  .container .plan-items span:first-of-type{
+	padding-bottom: 25px;}
+#plans  .container .plan-items span:last-of-type{
+	margin-bottom: 25px;}
+#plans  .container .plan-items span{
+	border-bottom: rgba(205,205,205,0.60) thin solid;
+	    display: block;
+    padding: 7px;
+}
+/*--------------last-blogs----------------*/
+#last-blogs{
+	background-color: #f9f9ff;	 
+}
+#last-blogs .container .blog-post{
+	width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;
+	text-align: left;
+}
+
+
+#last-blogs .container .blog-post img:nth-of-type(1){
+	width: 100%;
+margin-bottom: 10px;}
+#last-blogs .container .blog-post span{
+	margin-right: 7px;
+}
+#last-blogs .container .blog-post .raw{
+	  margin-left: auto; 
+margin-right: 0;
+
+}
+#last-blogs .container .blog-post h2{
+    font-size: 17px;
+    font-weight: 700;
+	
+    margin: 21px 0;
+}
+/*parteners*/
+#parteners .container  img{
+	opacity: 0.6;
+}
+/*footer*/
+#footer{
+	background: #04091e;
+	padding: 87px 0px;
+}
+#footer .container{
+	flex-direction: row;
+	justify-content: space-between;
+}
+#footer .container .section {
+	width: 38%;
+}
+#footer .container .section:last-of-type {
+	width: 20%;
+}
+#footer .container .section h4{
+	color: white;
+	
+}
+#footer .container .section p{
+	margin: 10px 0px;
+	color:#808187;
+}
+#footer .container .section p span{
+	color: #6664b6;
+}
+#footer .container .section form{
+	background-color: white;
+	display: flex;
+	
+}
+#footer .container .section form input{
+	    width: 100%;
+    border: none;
+    padding: 0px 13px;
+}
+
+#footer .container .section .icons i{
+	color: white;
+	font-size: 13px;
+	margin-right: 12px;
+}
+#footer .container .section form i{
+	    padding: 7px;
+    font-size: 17px;
+    color: white;
+    background-color: #8490ff;
+    text-align: center;
+}
